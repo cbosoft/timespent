@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Usage:
   timespent.py (--wage <wage> | --salary <salary> | --weekly-rate <weekly-rate>) --from <date> [--currency-symbol <symbol>] [--not-continuous]
