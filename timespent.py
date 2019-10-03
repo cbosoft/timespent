@@ -33,11 +33,11 @@ arglen = len(sys.argv)
 isodate_re = re.compile(r'\d\d\d\d-[01]\d-[0-3]\d')
 
 def error(message):
-    print(message, __doc__)
+    print(f'{message} {__doc__}')
     exit(1)
 
 if arglen < 5:
-    error("Syntax error.")
+    error('Syntax error.')
 
 earnings_per_second = None
 date_from = None
