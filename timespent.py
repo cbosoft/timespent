@@ -19,6 +19,16 @@ import re
 from datetime import datetime
 import time
 
+major, minor, patch = [int(s) for s in sys.version.split()[0].split('.')]
+
+if major < 3:
+    print("Good god, get python3!")
+    exit(1)
+
+if minor < 6:
+    print("Upgrade to 3.6 for glorious f-strings")
+    exit(1)
+
 arglen = len(sys.argv)
 isodate_re = re.compile(r'\d\d\d\d-[01]\d-[0-3]\d')
 
